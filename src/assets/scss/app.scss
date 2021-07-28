@@ -62,3 +62,135 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+// Custom Styles
+$marketing-container-margin-bottom: 1rem;
+$marketing-container-radius: $global-radius;
+$marketing-container-background: $white;
+$marketing-container-color: $black;
+$marketing-container-image-size: rem-calc(190);
+$white: #fefefe;
+$text-muted: #6c757d;
+
+.text-secondary {
+    color: $text-muted;
+}
+
+.top-bar .top-bar-left .dropdown .menu-text {
+    color: white;
+}
+
+.top-bar .top-bar-left .dropdown .menu-home {
+    color: white;
+}
+
+.top-bar .top-bar-left .dropdown .menu-link a{
+    color: rgba(255,255,255,.5);
+}
+
+.hollow {
+    &.button {
+        &.success {
+            &:hover {
+                background-color: $success-color;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.docs-example-orbit-slide {
+    padding: 20rem 4rem 2rem 4rem;
+    color: $white;
+
+    .orbit-slide:nth-of-type(n) & {
+        background: #5a5a5a;
+    }
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-heading {
+    font-size: 50px;
+}
+
+.marketing-container {
+    margin-bottom: $marketing-container-margin-bottom;
+    background-color: $marketing-container-background;
+    color: $black;
+    overflow: hidden;
+    padding: 0;
+    border-radius: $marketing-container-radius;
+
+    .marketing-image {
+        .image {
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            width: $marketing-container-image-size;
+            height: $marketing-container-image-size;
+            padding: rem-calc(15);
+        }
+    }
+
+    .marketing-description {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .details-button {
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+
+.cell {
+    &.auto {
+        &.description {
+            padding-top: 10rem;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .cell {
+        &.auto {
+            &.description {
+                padding-top: 5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .cell {
+        &.auto {
+            &.description {
+                padding-top: 2.5rem;
+                padding-bottom: 2.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) {
+    .cell {
+        &.auto {
+            &.description {
+                padding-top: 0rem;
+                padding-bottom: 0rem;
+            }
+        }
+    }
+}
+
+
+.dropdown {
+    &.menu {
+        color:$white
+    }
+}

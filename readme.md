@@ -1,3 +1,16 @@
+# Foundation vs Bootstrap
+
+What sticks out to me the most is how Foundation seems to have a more neutral approach when it comes to element design.
+Bootstrap elements tend to follow a very clearly set design philosophy (just like Google's Material Design), which makes
+Bootstrap sites stick out like a sore thumb in most cases. Having more neutral elements by default is a clear nod to how
+Foundation is built with customization in mind. Foundation is incredibly easy to customize with their settings approach,
+it feels much more like calling an API than using a CSS library, which is great.
+
+What I didn't like about Foundation is their grid system. It feels straight up inferior to flexbox based grids, for one,
+they are much less responsive out of the box and might require some tweaking to get right. This isn't as bad considering
+Foundation's customizability, but it's not what you would expect from a CSS library.
+
+
 # ZURB Template
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
